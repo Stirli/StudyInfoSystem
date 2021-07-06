@@ -1,0 +1,11 @@
+{
+    "name": "study-info-system",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "start": "node  --es-module-specifier-resolution=node src/app.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
