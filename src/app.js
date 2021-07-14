@@ -1,7 +1,16 @@
 import Logger from "./Logger.js";
 import express from "express";
+import Ajv from "ajv";
 import userRouter from "./routes/userRouter.js";
 import homeRouter from "./routes/homeRouter.js";
+import { FileSystemInfo } from "./services/fileProvider.js";
+
+const fsi = new FileSystemInfo({}, "server-config.json.schema");
+
+if (fsi.exists) {
+	const ajv = new Ajv();
+	JSON.parse()
+}
 
 const app = express();
 const port = 3000;
